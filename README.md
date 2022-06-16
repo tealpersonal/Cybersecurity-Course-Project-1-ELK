@@ -2,11 +2,14 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Diagrams/network.png)
+![Network Overview](https://github.com/tealpersonal/Cybersecurity-Course-Project-1-ELK/blob/main/Diagrams/network.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  Enter the playbook file.
+Below are the three Ansible Playbook files used in this project
+[install-elk.yml](https://github.com/tealpersonal/Cybersecurity-Course-Project-1-ELK/blob/main/Ansible/install-elk.yml)
+[filebeat-playbook.yml](https://github.com/tealpersonal/Cybersecurity-Course-Project-1-ELK/blob/main/Ansible/filebeat-playbook.yml)
+[metricbeat-playbook.yml](https://github.com/tealpersonal/Cybersecurity-Course-Project-1-ELK/blob/main/Ansible/metricbeat-playbook.yml)
 (Ansible/install-elk.yml)
 
 This document contains the following details:
@@ -72,14 +75,14 @@ What is the main advantage of automating configuration with Ansible?
 
 The playbook implements the following tasks:
 In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- 1) Increase maximum accessible memory
-- 2) Install docker, install PIP3
-- 3) Download docker image sebp/elk:761, set up restart policy, open ports for filebeat, metricbeat, and kibana.
-- 4) Enable docker on startup.
+- Increase maximum accessible memory
+- Install docker, install PIP3
+- Download docker image sebp/elk:761, set up restart policy, open ports for filebeat, metricbeat, and kibana.
+- Enable docker on startup.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Images/docker_ps_output.png)
+![docker ps output](https://github.com/tealpersonal/Cybersecurity-Course-Project-1-ELK/blob/main/Images/docker_ps_output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
